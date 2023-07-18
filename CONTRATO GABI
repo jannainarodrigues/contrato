@@ -81,8 +81,8 @@
 </head>
 <body>
     <div class="box">
-        <form action="https://formsubmit.co/jannainavitoria@gmail.com" method="POST">
-            <fieldset>
+      <form action="https://formsubmit.co/jannainavitoria@gmail.com" method="POST">
+<fieldset>
                 <legend><b>Fórmulário de Pacientes</b></legend>
                 <br>
                 <div class="inputBox">
