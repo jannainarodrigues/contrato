@@ -81,7 +81,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="mailto:jannainavitoria@gmail.com" method="POST" enctype="text/plain">
+        <form action="https://api.sheetmonkey.io/form/oG5EfgL3Q9aK17T9RZCrET" method="post">
             <fieldset>
                 <legend><b>Fórmulário de Clientes</b></legend>
                 <br>
