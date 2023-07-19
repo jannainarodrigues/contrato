@@ -126,10 +126,11 @@
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
-                <br><br>
+</form> 
+        <br><br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
-        </form>
+        
     </div>
 </body>
 </html>
