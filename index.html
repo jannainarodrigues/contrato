@@ -78,6 +78,14 @@
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+
+         @media screen and (max-width:768px) {
+    .container {  
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);  
+}
     </style>
 
 
@@ -89,7 +97,7 @@
             method="POST"
             name="FormContato">
             <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
+                <legend><b>Fórmulário de Contrato</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="data[nome]" id="nome" class="inputUser" required>
@@ -128,12 +136,4 @@
         </form>
     </div>
 </body>
-
-    @media screen and (max-width:768px) {
-    .container {  
-    display: grid;  
-    grid-gap: 5px;  
-    grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: repeat(2, 100px);  
-}
 </html>
