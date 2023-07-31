@@ -169,7 +169,21 @@ margin-top: -3rem;
 method="POST"
 name="FormContrato"
 </div>
-
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('success')
+    });
+  });
+</script>
                 
 <div class="form-header">
 <img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
@@ -232,21 +246,6 @@ salvo, motivos de extrema urgência </p>
   </div>
 
 </form>
-<script>
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('success')
-    });
-  });
-</script>
         
 </div>
 </div>
