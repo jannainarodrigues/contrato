@@ -171,7 +171,7 @@ id="FormContrato"
     
 <script>
   var form = document.getElementById('FormContrato');
-  form.addEventListener("submit", e => {
+  form.addEventListener("concluir-button", e => {
     e.preventDefault();
     fetch(form.action, {
         method : "POST",
@@ -179,11 +179,11 @@ id="FormContrato"
     }).then(
         response => response.json()
     ).then((html) => {
+      // you can put any JS code here
       alert('obrigada')
     });
   });
 </script>
-
 
   <div class="form-header">
 <img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
@@ -235,20 +235,21 @@ salvo, motivos de extrema urgência </p>
 <label for="data">Hoje é dia:</label>
 <input id="data" type="text" name="data[data]" placeholder="Ex:00000000" required>
   </div>
+
+  </div>
+
+<br><br>
            
-<center>
-  <div class="gender-inputs">
+<center><div class="gender-inputs">
 <input type="radio" id="li e aceito" name="data[li e aceito]" value="li e aceito" required>
 <label for="li e aceito">Declaro que Li e Aceito os Termos</label>
-  </div>
-</center>
+  </div></center>
 
   <div class="concluir-button">
 <button><a href="#">Concluir</a></button>
   </div>
-  </div>
 
-
+ 
   </body>
 
   </html>
