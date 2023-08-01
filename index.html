@@ -229,24 +229,6 @@ salvo, motivos de extrema urgência </p>
 <center><button><a href="#">Concluir</a></button>
   </div></center>
 
-</form>
-
-<script>
-  var form = document.getElementById('FormContrato');
-  form.addEventListener("concluir-button", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("FormContrato")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('obrigada')
-    });
-  });
-</script>
-
   </body>
 
   </html>
