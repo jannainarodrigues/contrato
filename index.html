@@ -21,7 +21,7 @@ body {
 }
 
 
-.form {
+.container {
     width: 50%;
     display:flex;
     justify-content: center;
@@ -163,12 +163,14 @@ margin-top: -3rem;
   <body>
 
  
-  <div class="form">
-<form action="https://sheetdb.io/api/v1/k3zxfeupvws3u"
-method="POST"
+  <div class="container">
+
+<form method="post" id="FormContrato"
+action="https://sheetdb.io/api/v1/k3zxfeupvws3u"
 id="FormContrato"
-  </div>
-    
+
+</div>
+
   <div class="form-header">
 <img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
   </div> 
@@ -233,6 +235,7 @@ salvo, motivos de extrema urgência </p>
 <button><a href="#">Concluir</a></button>
   </div>
 
+</form>
 <script>
   var form = document.getElementById('FormContrato');
   form.addEventListener("concluir-button", e => {
@@ -249,7 +252,6 @@ salvo, motivos de extrema urgência </p>
   });
 </script>
 
- 
   </body>
 
   </html>
