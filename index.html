@@ -157,39 +157,25 @@ margin-top: -3rem;
     }
 }
     
+  </style>
 
-</style>
 
-    
+  <body>
 
-<body>
-
-<div class="form">
+ 
+  <div class="form">
 <form action="https://sheetdb.io/api/v1/k3zxfeupvws3u"
 method="POST"
 name="FormContrato"
-</div>
-<script>
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('success')
-    });
-  });
-</script>
-                
-<div class="form-header">
-<img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
-</div>
-<br><br>
+  </div>
 
+
+
+  <div class="form-header">
+<img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
+  </div> 
+
+<br><br>
 
 <center><p><b>Contrato Terapêutico</b></p></center>
 <p><b>Sobre o atendimento</b><br>
@@ -222,34 +208,50 @@ Sessões em que o cliente não comparece, sem aviso antecipado, serão cobradas 
 salvo, motivos de extrema urgência </p>
 <br><br> 
 
-
   <div class="input-group">
-<div class="input-box">
+
+  <div class="input-box">
 <label for="nome">Paciente</label>
 <input id="nome" type="text" name="data[nome]" placeholder="Digite seu Nome" required>
-</div>
+  </div>
+
 <br><br>
-<div class="input-box">
+
+  <div class="input-box">
 <label for="data">Hoje é dia:</label>
-<input id="data" type="text" name="data[data]" placeholder="Digite a data de Hoje" required>
-</div>
+<input id="data" type="text" name="data[data]" placeholder="Ex:00000000" required>
+  </div>
+
   </div>
 
            
-  <center><div class="gender-inputs">
+<center>
+  <div class="gender-inputs">
 <input type="radio" id="li e aceito" name="data[li e aceito]" value="li e aceito" required>
-<label for="outro">Declaro que Li e Aceito os Termos</label>
-  </div></center>
+<label for="li e aceito">Declaro que Li e Aceito os Termos</label>
+  </div>
+</center>
 
   <div class="concluir-button">
 <button><a href="#">Concluir</a></button>
   </div>
 
-</form>
-        
-</div>
-</div>
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('success')
+    });
+  });
+</script>
 
-</body>
+  </body>
 
-</html>
+  </html>
