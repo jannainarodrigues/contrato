@@ -169,22 +169,6 @@ method="POST"
 id="FormContrato"
   </div>
     
-<script>
-  var form = document.getElementById('FormContrato');
-  form.addEventListener("concluir-button", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("FormContrato")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('obrigada')
-    });
-  });
-</script>
-
   <div class="form-header">
 <img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
   </div> 
@@ -248,6 +232,22 @@ salvo, motivos de extrema urgência </p>
   <div class="concluir-button">
 <button><a href="#">Concluir</a></button>
   </div>
+
+<script>
+  var form = document.getElementById('FormContrato');
+  form.addEventListener("concluir-button", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("FormContrato")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('obrigada')
+    });
+  });
+</script>
 
  
   </body>
