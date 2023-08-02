@@ -33,8 +33,7 @@ body {
 }
 
 .header {
-position: block;
-display: fixed;
+display: block;
 margin-top: -3rem;
 }
 
@@ -240,22 +239,8 @@ salvo, motivos de extrema urgência </p>
       alert('obrigada')
     });
   });
-</script><script>
-  var form = document.getElementById('FormContrato');
-  form.addEventListener("concluir-button", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("FormContrato")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('obrigada')
-    });
-  });
 </script>
-
+      
 </div>
 
 
