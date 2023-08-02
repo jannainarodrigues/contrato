@@ -154,13 +154,31 @@ margin-top: -3rem;
   <body>
 
  
-  <div class="box">      
- <form method="post" id="sheetdb-form"
-action="https://sheetdb.io/api/v1/k3zxfeupvws3u"
-</div>
-
-<div class="header">
+  <div class="box"> 
+      
+      <div class="header">
 <img src="https://github.com/jannainarodrigues/contrato/blob/main/gabriela.png?raw=true">
+  </div> 
+      
+ <form method="post" id="FormContrato"
+action="https://sheetdb.io/api/v1/k3zxfeupvws3u"
+
+     <script>
+  var form = document.getElementById('FormContrato');
+  form.addEventListener("concluir-button", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("FormContrato")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('obrigada')
+    });
+  });
+</script>
+
   </div> 
 
 <br>
